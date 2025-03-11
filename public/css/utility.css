@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Russo+One&family=Sacramento&family=Silkscreen:wght@400;700&family=VT323&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap');
+
+/* :root {
+    --playBtnOpacity: 0;
+    --playBtnBottom: 50px;
+    --playBtnBottomAlbum: 87px;
+    --cardBGColor: #121212;
+} */
+
+:root {
+    --navFColor: rgb(221, 221, 221);
+    --footerItemsTopMargin: 40px;
+    --sidebarTransform: translateX(500%);
+}
+
+.border {
+    border: 1px red solid;
+    box-sizing: border-box;
+}
+
+.border-2 {
+    border: 1px yellow solid;
+    box-sizing: border-box;
+}
+
+.border-3 {
+    border: 1px blue solid;
+    box-sizing: border-box;
+}
+
+.width-100vw {
+    width: 100vw;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.flex-0 {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+    gap: 8px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column-0 {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-spc-btw {
+    justify-content: space-between;
+}
+
+.justify-spc-ard {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.button-border {
+    border: 0;
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.half-rounded {
+    border-radius: 0px 0px 7px 7px;
+}
+
+.nav-font {
+    color: var(--navFColor);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    /* Default */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.def-text-font {
+    color: #3e3f3c;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* font-weight: 700; */
+}
+
+.blueviolet-text {
+    color: blueviolet;
+}
+
+.grey-text {
+    color: #b3b3b3;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.bold-dark-grey-text{
+    color: #3e3f3c;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.overflo-x-hidden {
+    overflow-x: hidden;
+}
+
+.footer-text {
+    /* color: #b3b3b3; */
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.music-player-text-font {
+    color: #444;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.old-skool-bg {
+    background-color: #ececec;
+}
+
+.black-bg-1 {
+    background-color: #000000;
+}
+
+.black-bg-2 {
+    /* background-color: blueviolet; */
+    background-color: #121212;
+}
+
+.black-bg-3 {
+    background-color: #1f1f1f;
+}
+
+.grey-bg {
+    background-color: #2C3333;
+}
+
+.footer-wrapper {
+    width: 100%;
+}
+
+.footer-items {
+    width: 90%;
+    margin-top: var(--footerItemsTopMargin);
+}
+
+.footer-info-list {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.footer-info-grid {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.copyright-text {
+    margin-bottom: 30px;
+}
+
+
+
+
+/* ----------------hidden play button on the cards---------------- */
+
+.artist-card {
+    background-color: var(--cardBGColor);
+    transition: background-color 100ms ease-out;
+}
+
+.album-card {
+    background-color: var(--cardBGColor);
+    transition: background-color 100ms ease-out;
+}
+
+.hidden-play-btn-artist, .hidden-play-btn-album {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+}
+
+.hidden-play-btn-artist > img {
+    height: 55px;
+    position: absolute;
+    right: 12px;
+    bottom: var(--playBtnBottom);
+    opacity: var(--playBtnOpacity);
+    transition: bottom 250ms ease-out, opacity 250ms ease-out;
+}
+
+.hidden-play-btn-artist:hover {
+    --playBtnBottom: 71px;
+    --playBtnOpacity: 1;
+    cursor: pointer;
+}
+
+.hidden-play-btn-album > img {
+    height: 55px;
+    position: absolute;
+    right: 12px;
+    bottom: var(--playBtnBottomAlbum);
+    opacity: var(--playBtnOpacity);
+    transition: bottom 250ms ease-out, opacity 250ms ease-out;
+}
+
+.hidden-play-btn-album:hover {
+    --playBtnBottomAlbum: 108px;
+    --playBtnOpacity: 1;
+    cursor: pointer;
+}
+
+.hidden-play-btn-artist > img:hover, .hidden-play-btn-album > img:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.artist-card-container:hover, .album-card-container:hover {
+    --cardBGColor: #1f1f1f;
+    cursor: pointer;
+}
+
+
+/* ----------------text-overflow---------------- */
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+.text-overflow-2l {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+.text-overflow-4l {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+.text-overflow-12l {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 12;
+    -webkit-line-clamp: 12; /* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+/* ----------------scroll bar---------------- */
+
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust width */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* Dark grey thumb */
+    border-radius: 10px;
+    border: 2px solid #1a1a1a; /* Blends with track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Lighter on hover */
+}
+
+
+
+
+/* ----------------Lottie Animation---------------- */
+
+
+.lottie-container {
+    width: 300px;
+    height: 300px;
+    transition: width 1s ease-out, height 1s ease-out;
+}
+
+
+
+
+/* ----------------Side bar---------------- */
+
+
+.close-ham-btn-container {
+    display: block;
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+}
+
+.right-side-bar {
+    width: 320px;
+    height: 96vh;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: auto;
+    opacity: 0.5;
+    transform: var(--sidebarTransform);
+    transition: right 500ms ease-out, opacity 500ms ease-out, transform 500ms ease-out;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.right-side-bar > ul {
+    padding: 0 15px;
+    gap: 25px;
+}
+
+.right-side-bar li {
+    width: 100%;
+    padding: 0 0 16px 0;
+    border-bottom: 1px rgba(243, 241, 241, 0.27) solid;
+}
+
+.right-side-bar li .nav-font:hover {
+    color: white;
+}
+
+

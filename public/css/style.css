@@ -1,0 +1,268 @@
+
+:root {
+    --navBColor: #2C3333;
+    --navHeight: 60px;
+    --asideWidth: 320px;
+    --asideBColor: rgba(232, 232, 226, 0.695);
+}
+
+body {
+    background-color: #E7F6F2;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* .drop-zone {
+    border: 2px dashed #aaa;
+    padding: 30px;
+    margin: 20px auto;
+    width: 300px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.drop-zone img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 10px;
+    display: none;
+} */
+
+.main-container {
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#downloadBtn {
+    display: none;
+    /* margin-top: 15px; */
+    color: white;
+    background: #395B64;
+    width: 300px;
+    margin-top: -4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#createPosterBtn {
+    color: white;
+    background: #395B64;
+    width: 300px;
+    margin-top: -4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+/* ----------------Navigation bar---------------- */
+
+
+header {
+    position: sticky;
+    top: 0;
+    /* background: url('../images/nav_bar/sky-water-nav-bg.jpg') no-repeat center center fixed;
+    background-size: cover; */
+    /* background-position: 50% 100%; */
+    z-index: 16;
+}
+
+nav {
+    height: var(--navHeight);
+    background-color: var(--navBColor);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0 20px;
+    z-index: 17;
+}
+
+nav ul {
+    gap: 40px;
+    transition: display 300ms ease-out;
+}
+
+nav > .options li .nav-font:hover {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    transition: display 300ms ease-out;
+}
+
+
+
+
+/* ----------------drag and drop button---------------- */
+
+
+.drop-images {
+    margin: 40px;
+    gap: 40px;
+}
+
+#uploadPoster, #uploadImage {
+    width: 300px;
+    height: 300px;
+    padding: 24px;
+    border-radius: 5px;
+    transition: width 300ms ease-out, height 300ms ease-out;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#posterUploadBtn, #imageUploadBtn {
+    display: none;
+}
+
+.imgView {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.imgView img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    transition: width 300ms ease-out, height 300ms ease-out;
+}
+
+#uploadPoster span:nth-child(2) {
+    font-size: 14px;
+    padding: 8px;
+}
+
+#uploadPoster span {
+    font-size: 12px;
+}
+
+.solid-border {
+    border: 1px #395B64 solid;
+}
+
+.dashed-border {
+    border: 1px #395B64 dashed;
+}
+
+.highlight {
+    color: #008cff;
+    border-color: #008cff;
+    background-color: #e3f2fd;
+}
+
+
+
+
+/* ----------------left section---------------- */
+
+
+.left {
+    width: 100%;
+}
+
+
+
+
+/* ----------------About Page---------------- */
+
+
+#profile-picture {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.blog-post-desc {
+    color: #3e3f3c;
+    height: 135px;
+    line-height: 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-desc {
+    height: auto;
+    margin: 40px 0;
+}
+
+.about-container, .contact-container {
+    width: 80%;
+    padding: 10px;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* ----------------Contact Page---------------- */
+
+
+.contact-form > form {
+    gap: 12px;
+}
+
+.feedback-input {
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 13px;
+    border: 2px solid #395B64;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    transition: all 0.3s;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.contact-form > form input, .contact-form > form textarea {
+    width: 600px;
+    font-family: 'Lato', sans-serif;
+}
+
+[type="submit"] {
+    width: 100%;
+    background: #395B64;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #395B64;
+}
+
+
+
