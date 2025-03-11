@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Creator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/media_queries.css">
+    <style>
+        h2 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="padding-0 margin-0">
+
+    <div class="left">
+        <header>
+            <nav class="flex-0 justify-spc-btw align-center">
+                <div class="logo flex-0 justify-center align-center">
+                    <img class="invert" height="45" src="./images/nav_bar/postrys-logo.png" alt="App logo">
+                </div>
+                <div class="options">
+                    <ul class="padding-0 flex-0">
+                        <li class="list-style"><span><a class="nav-font text-decoration" href="/">Home</a></span></li>
+                        <li class="list-style"><span><a class="nav-font text-decoration" href="/about">About</a></span></li>
+                        <li class="list-style"><span><a class="nav-font text-decoration" href="/contact">Contact</a></span></li>
+                    </ul>
+                    <div class="hamburger">
+                        <img height="30" src="../svgs/nav_bar/hamburger.svg" alt="Hamburger icon">
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="main-container flex-column-0 justify-center align-center">
+                <h2>Upload Images to Create Poster</h2>
+    
+                <section class="drop-images flex-0 justify-center align-center">
+                    <label for="posterUploadBtn" id="uploadPoster" class="flex-column-0 justify-center align-center solid-border">
+                        <input class="poster-upload-input" type="file" name="uploadButton" id="posterUploadBtn" multiple>
+                        <div id="posterPreview" class="imgView flex-column-0 justify-center align-center dashed-border">
+                            <img id="posterIcon" src="./svgs/upload/upload-a-poster-icon.png" alt="Upload image icon">
+                            <span class="def-text-font text-align-center grey-text">Drag and drop or click here<br/>to upload image</span>
+                            <span class="def-text-font text-align-center grey-text">Upload any images from Desktop</span>
+                        </div>
+                        <span class="fileName"></span>
+                    </label>
+                    <label for="imageUploadBtn" id="uploadImage" class="flex-column-0 justify-center align-center solid-border">
+                        <input class="image-upload-input" type="file" name="uploadButton" id="imageUploadBtn" multiple>
+                        <div id="imagePreview" class="imgView flex-column-0 justify-center align-center dashed-border">
+                            <img id="personIcon" src="./svgs/upload/upload-your-image-icon.png" alt="Upload image icon">
+                            <span class="def-text-font text-align-center grey-text">Drag and drop or click here<br/>to upload image</span>
+                            <span class="def-text-font text-align-center grey-text">Upload any images from Desktop</span>
+                        </div>
+                        <span class="fileName"></span>
+                    </label>
+                </section>
+            
+                <!-- Drag & Drop for Image 1 -->
+                <!-- <div class="drop-zone" id="dropZone1">
+                    <p>Drag & Drop Image 1 (Poster)</p>
+                    <input type="file" id="posterInput" accept="image/*" hidden>
+                    <img id="posterPreview">
+                </div> -->
+            
+                <!-- Drag & Drop for Image 2 -->
+                <!-- <div class="drop-zone" id="dropZone2">
+                    <p>Drag & Drop Image 2 (Person)</p>
+                    <input type="file" id="personInput" accept="image/*" hidden>
+                    <img id="personPreview">
+                </div> -->
+            
+                <!-- Button to create poster -->
+                <button id="createPosterBtn">Create Poster</button>
+            
+                <!-- Download button (hidden initially) -->
+                <button id="downloadBtn">Download Poster</button>
+                <!-- <a id="hiddenDownloadLink" class="text-decoration" download="poster.png" style="display: none;"></a> -->
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-wrapper grey-bg flex-0 justify-center">
+                <div class="footer-items">
+                    <!-- <div class="waves">
+                        <div class="wave" id="wave1"></div>
+                        <div class="wave" id="wave2"></div>
+                        <div class="wave" id="wave3"></div>
+                        <div class="wave" id="wave4"></div>
+                    </div> -->
+                    <!-- <ul class="social_icon">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul> -->
+                    <div class="footer-info-list footer-text grey-text">
+                        <ul class="footer-info-grid padding-0">
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">FAQ</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Help Centre</a></li>
+                            <!-- <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Account</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Media Centre</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Investor Relations</a></li> -->
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Privacy</a></li>
+                            <!-- <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Speed Test</a></li> -->
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Jobs</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Cookie Preferences</a></li>
+                            <!-- <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Legal Notices</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Ways to Watch</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Corporate Information</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Only on Netflix</a></li> -->
+                            <li class="list-style"><a class="text-decoration grey-text" href="/in-development">Terms of Use</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/about">About Us</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="/contact">Contact Us</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="https://freedns.afraid.org/">Free DNS</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="https://github.com/saurabh-ram">GitHub</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="https://saurabh-ram.github.io/saurabh-portfolio/">My Portfolio</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="https://saurabhram.blogspot.com/">Review Site</a></li>
+                            <li class="list-style"><a class="text-decoration grey-text" href="https://www.linkedin.com/in/saurabh-ram-312b371b3/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright-text footer-text grey-text">© Saurabh Ram. All rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="right right-side-bar black-bg-1">
+        <div class="close-ham-btn-container">
+            <img id="closeHamBtn" height="24" src="../svgs/nav_bar/close.svg" alt="Close button">
+        </div>
+        <ul class="padding-0 flex-column-0 align-center">
+            <li class="list-style"><span><a class="nav-font text-decoration" href="/">Home</a></span></li>
+            <li class="list-style"><span><a class="nav-font text-decoration" href="/about">About</a></span></li>
+            <li class="list-style"><span><a class="nav-font text-decoration" href="/contact">Contact</a></span></li>
+        </ul>
+    </div>
+
+    <script src="./scripts/script.js" charset="UTF-8"></script>
+
+</body>
+</html>
