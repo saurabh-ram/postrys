@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/media_queries.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+
+        h1 > span {
+            color: #3e3f3c;
+            font-family: 'EB Garamond', sans-serif;
+            font-size: 44px;
+            font-weight: 400;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body class="old-skool-bg padding-0 margin-0">
+    <div class="flex-0 overflo-x-hidden">
+
+        <div class="left">
+            <header>
+                <nav class="grey-bg flex-0 justify-spc-btw align-center">
+                    <div class="logo flex-0 justify-center align-center">
+                        <img class="invert" height="45" src="./images/nav_bar/postrys-logo.png" alt="App logo">
+                    </div>
+                    <div class="options flex justify-center align-center">
+                        <ul class="padding-0 flex-0">
+                            <li class="list-style"><span><a class="nav-font text-decoration" href="/">Home</a></span></li>
+                            <li class="list-style"><span><a class="nav-font text-decoration" href="/about">About</a></span></li>
+                        </ul>
+                        <div class="hamburger">
+                            <img height="30" src="../svgs/nav_bar/hamburger.svg" alt="Hamburger icon">
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="contact-wrapper flex-0 justify-center align-center">
+                    <div class="contact-container flex-0 justify-center align-center">
+                        <div class="contact-form flex-column-0">
+                            <h1><span>Contact Me</span></h1>
+                            <form class="flex-column">
+                                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                                <input type="submit" value="SUBMIT" />
+                            </form>
+                        </div>
+                        <figure>
+                            <div class="lottie-container">
+                                <lottie-player src="../lottieanimations/feedback.json"
+                                background="transparent"
+                                speed="1"
+                                style="width: 100%; height: 100%;"
+                                loop
+                                autoplay></lottie-player>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer-wrapper grey-bg flex-0 justify-center">
+                    <div class="footer-items">
+                        <!-- <div class="waves">
+                            <div class="wave" id="wave1"></div>
+                            <div class="wave" id="wave2"></div>
+                            <div class="wave" id="wave3"></div>
+                            <div class="wave" id="wave4"></div>
+                        </div> -->
+                        <!-- <ul class="social_icon">
+                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul> -->
+                        <div class="footer-info-list footer-text grey-text">
+                            <ul class="footer-info-grid padding-0">
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">FAQ</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Help Centre</a></li>
+                                <!-- <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Account</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Media Centre</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Investor Relations</a></li> -->
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Privacy</a></li>
+                                <!-- <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Speed Test</a></li> -->
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Jobs</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Cookie Preferences</a></li>
+                                <!-- <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Legal Notices</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Ways to Watch</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Corporate Information</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Only on Netflix</a></li> -->
+                                <li class="list-style"><a class="text-decoration grey-text" href="./comingsoon.html">Terms of Use</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="/about">About Us</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="/contact">Contact Us</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="https://freedns.afraid.org/">Free DNS</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="https://github.com/saurabh-ram">GitHub</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="https://saurabh-ram.github.io/saurabh-portfolio/">My Portfolio</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="https://saurabhram.blogspot.com/">Review Site</a></li>
+                                <li class="list-style"><a class="text-decoration grey-text" href="https://www.linkedin.com/in/saurabh-ram-312b371b3/">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-text footer-text grey-text">© Saurabh Ram. All rights reserved.</div>
+                    </div>
+                </div>
+            </footer>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+    
+        <div class="right right-side-bar black-bg-1">
+            <div class="close-ham-btn-container">
+                <img id="closeHamBtn" height="24" src="../svgs/nav_bar/close.svg" alt="Close button">
+            </div>
+            <ul class="padding-0 flex-column-0 align-center">
+                <li class="list-style"><span><a class="nav-font text-decoration" href="/">Home</a></span></li>
+                <li class="list-style"><span><a class="nav-font text-decoration" href="/about">About</a></span></li>
+            </ul>
+        </div>
+    
+        <script src="../scripts/script.js" charset="UTF-8"></script>
+    
+    </div>
+</body>
+
+</html>
