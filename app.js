@@ -15,7 +15,7 @@ const upload = multer({ storage: storage });
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    let directoryName = __dirName.slice(0, -7);
+    let directoryName = __dirName;
     res.sendFile(path.join(directoryName, "index.html"));
 })
 
